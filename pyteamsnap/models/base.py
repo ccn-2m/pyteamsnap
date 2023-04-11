@@ -1,5 +1,5 @@
 from __future__ import annotations
-import apiclient.exceptions
+import rest_api_client_toolkit.exceptions
 import pyteamsnap.client
 import typing as T
 from abc import ABC
@@ -80,7 +80,7 @@ class BaseTeamsnapObject(ABC):
         """
         try:
             results = client.query(cls.rel, "search", **kwargs)
-        except apiclient.exceptions.ServerError as e:
+        except rest_api_client_toolkit.exceptions.ServerError as e:
             raise e
         return [cls(client, data=result) for result in results]
 

@@ -1,6 +1,6 @@
 import typing as T
 
-from apiclient import (
+from rest_api_client_toolkit import (
     APIClient,
     HeaderAuthentication,
     JsonResponseHandler,

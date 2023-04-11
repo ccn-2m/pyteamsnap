@@ -1,9 +1,9 @@
-from apiclient.response_handlers import BaseResponseHandler
-from apiclient.request_formatters import BaseRequestFormatter
-from apiclient.response import Response
+from rest_api_client_toolkit.response_handlers import BaseResponseHandler
+from rest_api_client_toolkit.request_formatters import BaseRequestFormatter
+from rest_api_client_toolkit.response import Response
 from typing import Optional
-from apiclient.exceptions import ResponseParseError
-from apiclient.utils.typing import JsonType, XmlType, OptionalJsonType, OptionalStr
+from rest_api_client_toolkit.exceptions import ResponseParseError
+from rest_api_client_toolkit.utils.typing import JsonType, XmlType, OptionalJsonType, OptionalStr
 from json import JSONDecodeError
 from collection_json import Collection
 import json
